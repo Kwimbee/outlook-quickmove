@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickMove", "QuickMove.csproj", "{715F571E-35B8-41EE-8D99-C8AE4AD53196}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "AddInSetup", "..\AddInSetup\AddInSetup.vdproj", "{9E0FF7D3-C844-42E1-B2D0-BCBBA3060D4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{715F571E-35B8-41EE-8D99-C8AE4AD53196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{715F571E-35B8-41EE-8D99-C8AE4AD53196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{715F571E-35B8-41EE-8D99-C8AE4AD53196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{715F571E-35B8-41EE-8D99-C8AE4AD53196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E0FF7D3-C844-42E1-B2D0-BCBBA3060D4E}.Debug|Any CPU.ActiveCfg = Debug
+		{9E0FF7D3-C844-42E1-B2D0-BCBBA3060D4E}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25263693-90A5-4F14-BFB8-681C4F1279B7}
+	EndGlobalSection
+EndGlobal

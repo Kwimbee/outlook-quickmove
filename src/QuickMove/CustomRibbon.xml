@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+      <tab idMso="TabMail">
+        <group id="grpQuickMove"
+               label="QuickMove">
+			<button id="btnQuickMove" imageMso="AlwaysMoveConversation" size="large" label="QuickMove" onAction="onActionCallback"/>
+		</group>
+      </tab>
+    </tabs>
+  </ribbon>
+  <contextMenus>
+	  <contextMenu idMso="ContextMenuMailItem">
+	    <button id="btnQuickMoveContext" imageMso="AlwaysMoveConversation" label="QuickMove" onAction="onActionCallback"/>
+	  </contextMenu>
+    <contextMenu idMso="ContextMenuMultipleItems">
+      <button id="btnQuickMoveContextConv" imageMso="AlwaysMoveConversation" label="QuickMove" onAction="onActionCallback"/>
+    </contextMenu>
+  </contextMenus>
+</customUI>
+
