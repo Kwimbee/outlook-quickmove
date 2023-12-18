@@ -3,7 +3,7 @@
 "VSVersion" = "3:800"
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
-"ProjectName" = "8:AddInSetup"
+"ProjectName" = "8:QuickMoveSetup"
 "LanguageId" = "3:0"
 "CodePage" = "3:1252"
 "UILanguageId" = "3:0"
@@ -171,7 +171,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\AddInSetup.msi"
+        "OutputFilename" = "8:Debug\\QuickMoveSetup.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -208,7 +208,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\AddInSetup.msi"
+        "OutputFilename" = "8:Release\\QuickMoveSetup.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -557,17 +557,6 @@
         }
         "Folder"
         {
-            "{1525181F-901A-416C-8A58-119130FE478E}:_175372490EC24D82A03AEE4428053F66"
-            {
-            "Name" = "8:#1916"
-            "AlwaysCreate" = "11:FALSE"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Property" = "8:DesktopFolder"
-                "Folders"
-                {
-                }
-            }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_3BD16FADED5C4BD9890249F797F0654C"
             {
             "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
@@ -576,17 +565,6 @@
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Property" = "8:TARGETDIR"
-                "Folders"
-                {
-                }
-            }
-            "{1525181F-901A-416C-8A58-119130FE478E}:_7A508C5872D1480C87E43C9712902F60"
-            {
-            "Name" = "8:#1919"
-            "AlwaysCreate" = "11:FALSE"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Property" = "8:ProgramMenuFolder"
                 "Folders"
                 {
                 }
@@ -608,7 +586,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:QuickMove"
         "ProductCode" = "8:{58E185C2-B77A-40DD-976F-5F0CCAA1CCCB}"
-        "PackageCode" = "8:{7BF6330B-4D86-4F9A-90D3-1FCAA88C9042}"
+        "PackageCode" = "8:{333E2339-A70B-4CBC-84B4-46E500783268}"
         "UpgradeCode" = "8:{CC006544-ABC2-44CD-BBF2-E8FD9D917B1B}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -1231,7 +1209,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_368782AE4EE24804BA4DCA5AA54097A3"
             {
-            "SourcePath" = "8:"
+            "SourcePath" = "8:..\\QuickMove\\obj\\Debug\\QuickMove.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_3BD16FADED5C4BD9890249F797F0654C"

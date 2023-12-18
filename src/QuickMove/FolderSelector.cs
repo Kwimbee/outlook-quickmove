@@ -29,6 +29,10 @@ namespace QuickMove
         {
             lbFolders.SelectedIndex = 0;
             txtSearch.Focus();
+
+            #if DEBUG
+                this.Text = "QuickMove DEBUG - Folders";
+            #endif
         }
 
         // On double click to item
