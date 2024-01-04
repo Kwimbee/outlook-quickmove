@@ -585,8 +585,8 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:QuickMove"
-        "ProductCode" = "8:{58E185C2-B77A-40DD-976F-5F0CCAA1CCCB}"
-        "PackageCode" = "8:{333E2339-A70B-4CBC-84B4-46E500783268}"
+        "ProductCode" = "8:{7EEDD162-06F7-497B-8E09-214476220292}"
+        "PackageCode" = "8:{3BCE6B62-86CA-4268-A722-0E322A4A508F}"
         "UpgradeCode" = "8:{CC006544-ABC2-44CD-BBF2-E8FD9D917B1B}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -1209,7 +1209,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_368782AE4EE24804BA4DCA5AA54097A3"
             {
-            "SourcePath" = "8:..\\QuickMove\\obj\\Debug\\QuickMove.dll"
+            "SourcePath" = "8:..\\QuickMove\\obj\\Release\\QuickMove.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_3BD16FADED5C4BD9890249F797F0654C"
