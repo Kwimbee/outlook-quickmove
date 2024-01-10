@@ -49,7 +49,11 @@ namespace QuickMove
             string searchText = txtSearch.Text.ToLower();
 
             foreach (string folder in originalFolders) {
-                if (folder.ToLower().Contains(searchText))
+
+                string folder_clean =  folder.ToLower().Replace('é', 'e').Replace('à', 'a').Replace('è','e').Replace('ê','e').Replace('ç', 'c').Replace('ù', 'u');
+                string searchText_clean = searchText.ToLower().Replace('é', 'e').Replace('à', 'a').Replace('è', 'e').Replace('ê', 'e').Replace('ç', 'c').Replace('ù', 'u');
+
+                if (folder_clean.Contains(searchText_clean))
                 {
                     lbFolders.Items.Add(folder);
                 }
