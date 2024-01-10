@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickMove", "QuickMove.csproj", "{715F571E-35B8-41EE-8D99-C8AE4AD53196}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "AddInSetup", "..\AddInSetup\AddInSetup.vdproj", "{9E0FF7D3-C844-42E1-B2D0-BCBBA3060D4E}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "QuickMoveSetup", "..\AddInSetup\AddInSetup.vdproj", "{9E0FF7D3-C844-42E1-B2D0-BCBBA3060D4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +19,7 @@ Global
 		{715F571E-35B8-41EE-8D99-C8AE4AD53196}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9E0FF7D3-C844-42E1-B2D0-BCBBA3060D4E}.Debug|Any CPU.ActiveCfg = Debug
 		{9E0FF7D3-C844-42E1-B2D0-BCBBA3060D4E}.Release|Any CPU.ActiveCfg = Release
+		{9E0FF7D3-C844-42E1-B2D0-BCBBA3060D4E}.Release|Any CPU.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
