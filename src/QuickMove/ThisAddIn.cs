@@ -13,7 +13,7 @@ namespace QuickMove
 {
     public partial class ThisAddIn
     {
-        public static string version = "1.2.0";
+        public static string version = "1.3.1";
 
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {

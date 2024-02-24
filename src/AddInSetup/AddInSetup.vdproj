@@ -16,7 +16,7 @@
         "Entry"
         {
         "MsmKey" = "8:_1E8090E099B629FCA35F40AE42512411"
-        "OwnerKey" = "8:_368782AE4EE24804BA4DCA5AA54097A3"
+        "OwnerKey" = "8:_FB405422832B443091ADB0ADD1DC33B1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -34,25 +34,19 @@
         "Entry"
         {
         "MsmKey" = "8:_2784D540CB1159A37AE3BAC5184E71A9"
-        "OwnerKey" = "8:_368782AE4EE24804BA4DCA5AA54097A3"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_368782AE4EE24804BA4DCA5AA54097A3"
-        "OwnerKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_FB405422832B443091ADB0ADD1DC33B1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_484F99933580D9589811A1AA03002EEB"
-        "OwnerKey" = "8:_368782AE4EE24804BA4DCA5AA54097A3"
+        "OwnerKey" = "8:_FB405422832B443091ADB0ADD1DC33B1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_4B2B0545ED8E80BC035B91C368A4128D"
-        "OwnerKey" = "8:_368782AE4EE24804BA4DCA5AA54097A3"
+        "OwnerKey" = "8:_FB405422832B443091ADB0ADD1DC33B1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -64,7 +58,7 @@
         "Entry"
         {
         "MsmKey" = "8:_7867F2CA8A4E93C87225C52C55D7806B"
-        "OwnerKey" = "8:_368782AE4EE24804BA4DCA5AA54097A3"
+        "OwnerKey" = "8:_FB405422832B443091ADB0ADD1DC33B1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -76,13 +70,13 @@
         "Entry"
         {
         "MsmKey" = "8:_99CE3732070ECA950195CA52D1B5CA47"
-        "OwnerKey" = "8:_368782AE4EE24804BA4DCA5AA54097A3"
+        "OwnerKey" = "8:_FB405422832B443091ADB0ADD1DC33B1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_C0050A855E3EF52929DE302CBA1EAB87"
-        "OwnerKey" = "8:_368782AE4EE24804BA4DCA5AA54097A3"
+        "OwnerKey" = "8:_FB405422832B443091ADB0ADD1DC33B1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -100,19 +94,25 @@
         "Entry"
         {
         "MsmKey" = "8:_F49A8DE4138CFA1CE3C394938F18825B"
-        "OwnerKey" = "8:_99CE3732070ECA950195CA52D1B5CA47"
+        "OwnerKey" = "8:_FB405422832B443091ADB0ADD1DC33B1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_F49A8DE4138CFA1CE3C394938F18825B"
-        "OwnerKey" = "8:_368782AE4EE24804BA4DCA5AA54097A3"
+        "OwnerKey" = "8:_99CE3732070ECA950195CA52D1B5CA47"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FB405422832B443091ADB0ADD1DC33B1"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_368782AE4EE24804BA4DCA5AA54097A3"
+        "OwnerKey" = "8:_FB405422832B443091ADB0ADD1DC33B1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -585,15 +585,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:QuickMove"
-        "ProductCode" = "8:{F9D54149-E017-4483-96E7-12504BBFA858}"
-        "PackageCode" = "8:{929AC305-13D0-4877-ABC4-E6A7AB98D456}"
+        "ProductCode" = "8:{75FA730B-F85E-43B9-A71F-B3F5EF3784B7}"
+        "PackageCode" = "8:{DA4CA15F-EF80-4DD9-B516-16B05F7EC27F}"
         "UpgradeCode" = "8:{CC006544-ABC2-44CD-BBF2-E8FD9D917B1B}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.2.0"
+        "ProductVersion" = "8:1.3.1"
         "Manufacturer" = "8:Kwimbee"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -1207,7 +1207,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_368782AE4EE24804BA4DCA5AA54097A3"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_FB405422832B443091ADB0ADD1DC33B1"
             {
             "SourcePath" = "8:..\\QuickMove\\obj\\Release\\QuickMove.dll"
             "TargetName" = "8:"
@@ -1227,7 +1227,7 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:Debug|Any CPU"
+            "OutputConfiguration" = "8:Release|Any CPU"
             "OutputGroupCanonicalName" = "8:Built"
             "OutputProjectGuid" = "8:{715F571E-35B8-41EE-8D99-C8AE4AD53196}"
             "ShowKeyOutput" = "11:TRUE"
