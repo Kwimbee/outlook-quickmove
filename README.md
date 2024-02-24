@@ -14,10 +14,10 @@ This AddIn for Outlook is providing a quick way to move emails to a folder only 
 - Fuzzy search of the folder in the entire structure
 
 
-
 ## Installation
 
 This AddIn can be installed by the generated setup.msi or setup.exe files.
 
 Restart outlook and it should be done !
-    
+
+**Note: This AddIn is not compatible with the New Outlook**
