@@ -59,10 +59,14 @@ namespace QuickMove
 
         public string GetCustomUI(string ribbonID)
         {
+#if DEBUG
+            return GetResourceText("QuickMove.CustomRibbon.Debug.xml");
+#else
             return GetResourceText("QuickMove.CustomRibbon.xml");
+#endif
         }
 
-        #endregion
+#endregion
 
         #region Rappels du ruban
         //Créez des méthodes de rappel ici. Pour plus d'informations sur l'ajout de méthodes de rappel, consultez https://go.microsoft.com/fwlink/?LinkID=271226

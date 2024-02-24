@@ -3,8 +3,7 @@
   <ribbon>
     <tabs>
       <tab idMso="TabMail">
-        <group id="grpQuickMove"
-               label="QuickMove">
+        <group id="grpQuickMove" label="QuickMove">
 			<button id="btnQuickMove" imageMso="AlwaysMoveConversation" size="large" label="QuickMove" onAction="onActionCallback"/>
 		</group>
       </tab>

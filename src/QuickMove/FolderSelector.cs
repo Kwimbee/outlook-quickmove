@@ -30,9 +30,15 @@ namespace QuickMove
             lbFolders.SelectedIndex = 0;
             txtSearch.Focus();
 
-            #if DEBUG
-                this.Text = "QuickMove DEBUG - Folders";
-            #endif
+#if DEBUG
+            this.Text = "QuickMove DEBUG - Folders";
+                
+            toolStripLabelVersion.Text = ThisAddIn.version + " - DEBUG";
+#else
+
+            toolStripLabelVersion.Text = ThisAddIn.version;
+#endif
+
         }
 
         // On double click to item
