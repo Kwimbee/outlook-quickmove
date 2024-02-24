@@ -22,13 +22,13 @@ namespace QuickMove
         // call this to invoke the add-in
         public void quickMoveCalled()
         {
-            //Outlook.Folder inbox = Application.Session.GetDefaultFolder(Outlook.OlDefaultFolders.olFolderInbox) as Outlook.Folder;
-            Outlook.Folder inbox = this.Application.ActiveExplorer().CurrentFolder as Outlook.Folder;
+            Outlook.Folder current_folder = this.Application.ActiveExplorer().CurrentFolder as Outlook.Folder;
 
-            if (inbox.CurrentView.ViewType == Outlook.OlViewType.olTableView)
+            // if is table view
+            if (current_folder.CurrentView.ViewType == Outlook.OlViewType.olTableView)
             {
-                Outlook.TableView view = inbox.CurrentView as Outlook.TableView;
-                if (view.ShowConversationByDate == true)
+                Outlook.TableView current_view = current_folder.CurrentView as Outlook.TableView;
+                if (current_view.ShowConversationByDate == true)
                 {
                     Outlook.Folder rootFolder = Application.Session.DefaultStore.GetRootFolder() as Outlook.Folder;
 
@@ -68,6 +68,20 @@ namespace QuickMove
                                                     MessageBox.Show(ex.Message);
                                                 }
                                             }
+                                        }
+                                    }
+                                } else
+                                {
+                                    // Move items that are not conversation items
+                                    foreach (MailItem item in selection)
+                                    {
+                                        try
+                                        {
+                                            item.Move(foundFolder);
+                                        }
+                                        catch (System.Exception ex)
+                                        {
+                                            MessageBox.Show(ex.Message);
                                         }
                                     }
                                 }
