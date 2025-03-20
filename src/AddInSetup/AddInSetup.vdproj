@@ -94,13 +94,13 @@
         "Entry"
         {
         "MsmKey" = "8:_F49A8DE4138CFA1CE3C394938F18825B"
-        "OwnerKey" = "8:_FB405422832B443091ADB0ADD1DC33B1"
+        "OwnerKey" = "8:_99CE3732070ECA950195CA52D1B5CA47"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_F49A8DE4138CFA1CE3C394938F18825B"
-        "OwnerKey" = "8:_99CE3732070ECA950195CA52D1B5CA47"
+        "OwnerKey" = "8:_FB405422832B443091ADB0ADD1DC33B1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -190,14 +190,14 @@
             "ComponentsUrl" = "8:"
                 "Items"
                 {
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.8"
                     {
-                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 et x64)"
-                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    "Name" = "8:Microsoft .NET Framework 4.8 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.8"
                     }
                     "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.VSTORuntime.4.0"
                     {
-                    "Name" = "8:Microsoft Visual Studio 2010 Tools pour Office Runtime (x86 et x64)"
+                    "Name" = "8:Microsoft Visual Studio 2010 Tools for Office Runtime (x86 and x64)"
                     "ProductCode" = "8:Microsoft.VSTORuntime.4.0"
                     }
                 }
@@ -227,10 +227,10 @@
             "ComponentsUrl" = "8:"
                 "Items"
                 {
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.8"
                     {
-                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
-                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    "Name" = "8:Microsoft .NET Framework 4.8 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.8"
                     }
                 }
             }
@@ -255,7 +255,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:.NETFramework,Version=v4.7.2"
+                "FrameworkVersion" = "8:.NETFramework,Version=v4.8"
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=863262"
                 }
@@ -585,15 +585,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:QuickMove"
-        "ProductCode" = "8:{75FA730B-F85E-43B9-A71F-B3F5EF3784B7}"
-        "PackageCode" = "8:{DA4CA15F-EF80-4DD9-B516-16B05F7EC27F}"
+        "ProductCode" = "8:{E66AE1C8-D0E2-462A-A975-F12D5ED12F8B}"
+        "PackageCode" = "8:{1D5EC91E-FD43-4053-AF91-789233C93CB6}"
         "UpgradeCode" = "8:{CC006544-ABC2-44CD-BBF2-E8FD9D917B1B}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.3.1"
+        "ProductVersion" = "8:2.0.0"
         "Manufacturer" = "8:Kwimbee"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -821,7 +821,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_EDBF157BD2D14FE58DF652E22E9BA960"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Terminé"
+                    "DisplayName" = "8:Finished"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdFinishedDlg.wid"
@@ -865,7 +865,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_18BF7657B517477A905ACC53F43D2B5C"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Progression"
+                    "DisplayName" = "8:Progress"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdProgressDlg.wid"
@@ -909,7 +909,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_88BA5262ABA34C09AC825E5C603D30EE"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Terminé"
+                    "DisplayName" = "8:Finished"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFinishedDlg.wid"
@@ -952,7 +952,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_8F5116E700BD44A3814E881B3330B1AA"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Progression"
+                    "DisplayName" = "8:Progress"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminProgressDlg.wid"
@@ -996,7 +996,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_22A6AD9C10AF4BA8AEA7FB1B868887C2"
                     {
                     "Sequence" = "3:200"
-                    "DisplayName" = "8:Dossier d'installation"
+                    "DisplayName" = "8:Installation Folder"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdFolderDlg.wid"
@@ -1031,7 +1031,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_773A249C4C804B9FAF41B7AEBACC0C8A"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Bienvenue"
+                    "DisplayName" = "8:Welcome"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdWelcomeDlg.wid"
@@ -1079,7 +1079,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_E4BCA50309134BB49AA05A27A9F89156"
                     {
                     "Sequence" = "3:300"
-                    "DisplayName" = "8:Confirmer l'installation"
+                    "DisplayName" = "8:Confirm Installation"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdConfirmDlg.wid"
@@ -1110,7 +1110,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_2194B81F15204E219C75F14D6268DF8D"
                     {
                     "Sequence" = "3:200"
-                    "DisplayName" = "8:Dossier d'installation"
+                    "DisplayName" = "8:Installation Folder"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFolderDlg.wid"
@@ -1132,7 +1132,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_27E3D0A954A14469B688CB8390C9D2DC"
                     {
                     "Sequence" = "3:300"
-                    "DisplayName" = "8:Confirmer l'installation"
+                    "DisplayName" = "8:Confirm Installation"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminConfirmDlg.wid"
@@ -1154,7 +1154,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_BBA060F3FD354FB5A27BEFC4094BCE7E"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Bienvenue"
+                    "DisplayName" = "8:Welcome"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminWelcomeDlg.wid"

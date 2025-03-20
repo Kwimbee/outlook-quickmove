@@ -1,0 +1,25 @@
+﻿<Window x:Class="QuickMove.FolderSelector"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:QuickMove"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+        PreviewKeyDown="Window_PreviewKeyDown"
+        Height="450"
+        Width="800"
+        MinHeight="450"
+        MinWidth="800"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="30px"/>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="lbFolders" d:ItemsSource="{d:SampleData ItemCount=50}" HorizontalAlignment="Stretch" Height="NaN" Margin="0,0,0,0" VerticalAlignment="Stretch" Width="NaN" MouseDoubleClick="lbFolders_MouseDoubleClick" SelectionChanged="lbFolders_SelectionChanged" ScrollViewer.VerticalScrollBarVisibility="Disabled" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="txtSearch" Grid.Row="1" TextWrapping="Wrap" VerticalContentAlignment="Center" TextChanged="txtSearch_TextChanged" BorderBrush="{x:Null}"/>
+
+    </Grid>
+</Window>

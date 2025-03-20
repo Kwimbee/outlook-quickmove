@@ -13,7 +13,7 @@ namespace QuickMove
 {
     public partial class ThisAddIn
     {
-        public static string version = "1.3.1";
+        public static string version = "2.0.0";
 
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
@@ -34,55 +34,53 @@ namespace QuickMove
 
                     List<string> allfolders = ListAllFolders(rootFolder);
 
-                    using (var form = new frmFolderSelector(allfolders))
+                    var form = new FolderSelector(allfolders);
+                    if (form.ShowDialog() == true)
                     {
-                        var result = form.ShowDialog();
-                        if (result == DialogResult.OK)
+                        string selectedFolder = form.selectedFolder;
+
+                        Outlook.MAPIFolder foundFolder = findFolderByName(selectedFolder, rootFolder.Folders);
+
+                        if (foundFolder != null)
                         {
-                            string selectedFolder = form.selectedFolder;
+                            Outlook.Selection selection = Application.ActiveExplorer().Selection;
+                            Outlook.Selection convHeaders = selection.GetSelection(Outlook.OlSelectionContents.olConversationHeaders) as Outlook.Selection;
 
-                            Outlook.MAPIFolder foundFolder = findFolderByName(selectedFolder, rootFolder.Folders);
-
-                            if (foundFolder != null)
+                            if (convHeaders.Count >= 1)
                             {
-                                Outlook.Selection selection = Application.ActiveExplorer().Selection;
-                                Outlook.Selection convHeaders = selection.GetSelection(Outlook.OlSelectionContents.olConversationHeaders) as Outlook.Selection;
-
-                                if (convHeaders.Count >= 1)
+                                foreach (Outlook.ConversationHeader convHeader in convHeaders)
                                 {
-                                    foreach (Outlook.ConversationHeader convHeader in convHeaders)
+                                    Outlook.SimpleItems items = convHeader.GetItems();
+                                    for (int i = 1; i <= items.Count; i++)
                                     {
-                                        Outlook.SimpleItems items = convHeader.GetItems();
-                                        for (int i = 1; i <= items.Count; i++)
+                                        if (items[i] is Outlook.MailItem)
                                         {
-                                            if (items[i] is Outlook.MailItem)
-                                            {
-                                                Outlook.MailItem mail = items[i] as Outlook.MailItem;
+                                            Outlook.MailItem mail = items[i] as Outlook.MailItem;
 
-                                                try
-                                                {
-                                                    mail.Move(foundFolder);
-                                                }
-                                                catch (System.Exception ex)
-                                                {
-                                                    MessageBox.Show(ex.Message);
-                                                }
+                                            try
+                                            {
+                                                mail.Move(foundFolder);
+                                            }
+                                            catch (System.Exception ex)
+                                            {
+                                                MessageBox.Show(ex.Message);
                                             }
                                         }
                                     }
-                                } else
+                                }
+                            }
+                            else
+                            {
+                                // Move items that are not conversation items
+                                foreach (MailItem item in selection)
                                 {
-                                    // Move items that are not conversation items
-                                    foreach (MailItem item in selection)
+                                    try
                                     {
-                                        try
-                                        {
-                                            item.Move(foundFolder);
-                                        }
-                                        catch (System.Exception ex)
-                                        {
-                                            MessageBox.Show(ex.Message);
-                                        }
+                                        item.Move(foundFolder);
+                                    }
+                                    catch (System.Exception ex)
+                                    {
+                                        MessageBox.Show(ex.Message);
                                     }
                                 }
                             }
