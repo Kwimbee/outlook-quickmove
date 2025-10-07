@@ -13,7 +13,7 @@ namespace QuickMove
 {
     public partial class ThisAddIn
     {
-        public static string version = "2.0.0";
+        public static string version = "2.1.0";
 
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
@@ -90,6 +90,37 @@ namespace QuickMove
             }
         }
 
+        // call this to invoke quickbrowse
+        public void quickBrowseCalled()
+        {
+            Outlook.Folder current_folder = this.Application.ActiveExplorer().CurrentFolder as Outlook.Folder;
+
+            // if is table view
+            if (current_folder.CurrentView.ViewType == Outlook.OlViewType.olTableView)
+            {
+                Outlook.TableView current_view = current_folder.CurrentView as Outlook.TableView;
+                if (current_view.ShowConversationByDate == true)
+                {
+                    Outlook.Folder rootFolder = Application.Session.DefaultStore.GetRootFolder() as Outlook.Folder;
+
+                    List<string> allfolders = ListAllFolders(rootFolder);
+
+                    var form = new FolderSelector(allfolders);
+                    if (form.ShowDialog() == true)
+                    {
+                        string selectedFolder = form.selectedFolder;
+
+                        Outlook.MAPIFolder foundFolder = findFolderByName(selectedFolder, rootFolder.Folders);
+
+                        if (foundFolder != null)
+                        {
+                            this.Application.ActiveExplorer().CurrentFolder = foundFolder;
+                        }
+                    }
+                }
+            }
+        }
+
         // search folder by name
         private MAPIFolder findFolderByName(string folderPath, Folders folders)
         {
@@ -146,8 +177,6 @@ namespace QuickMove
 
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
         {
-            // Remarque : Outlook ne déclenche plus cet événement. Si du code
-            //    doit s'exécuter à la fermeture d'Outlook (consultez https://go.microsoft.com/fwlink/?LinkId=506785)
         }
 
         #region Code généré par VSTO

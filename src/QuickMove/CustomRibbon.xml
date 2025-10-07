@@ -4,8 +4,9 @@
     <tabs>
       <tab idMso="TabMail">
         <group id="grpQuickMove" label="QuickMove">
-			<button id="btnQuickMove" imageMso="AlwaysMoveConversation" size="large" label="QuickMove" onAction="onActionCallback"/>
-		</group>
+			    <button id="btnQuickMove" imageMso="AlwaysMoveConversation" size="large" label="QuickMove" onAction="onActionCallback"/>
+          <button id="btnQuickBrowse" imageMso="BrowseToAttach" size="large" label="QuickBrowse" onAction="onActionCallback"/>
+        </group>
       </tab>
     </tabs>
   </ribbon>

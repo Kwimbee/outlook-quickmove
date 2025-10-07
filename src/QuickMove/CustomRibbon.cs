@@ -52,6 +52,9 @@ namespace QuickMove
             {
                 Globals.ThisAddIn.quickMoveCalled();
             }
+            if (control.Id == "btnQuickBrowse") {
+                Globals.ThisAddIn.quickBrowseCalled();
+            }
 
         }
 
